@@ -1,0 +1,58 @@
+{
+  "name": "koa-hex-boilerplate",
+  "version": "1.0.0",
+  "description": "A Koa.js API project using TypeScript and MySQL",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.0",
+    "koa-router": "^12.0.0",
+    "mysql2": "^3.2.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa-bodyparser": "^4.3.4",
+    "@types/koa-router": "^7.4.8",
+    "@types/node": "^20.3.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^3.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

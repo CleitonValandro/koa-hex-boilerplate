@@ -1,5 +1,5 @@
 import { Repository, EntityTarget } from "typeorm"
-import { AppDataSource } from "../../infrastructure/database/database"
+import { AppDataSource } from "../../modules/data/users/infra/database/database"
 
 export class BaseRepository<T> {
     private repository: Repository<any>

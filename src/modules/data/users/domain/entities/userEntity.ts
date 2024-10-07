@@ -1,5 +1,5 @@
 import { UserInterface } from "../interfaces/userInterface"
-import { BaseEntity } from "./baseEntity"
+import { BaseEntity } from "../../../../../common/base/baseEntity"
 
 export class UserEntity extends BaseEntity {
     name: string

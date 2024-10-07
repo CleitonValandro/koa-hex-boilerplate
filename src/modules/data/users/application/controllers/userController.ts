@@ -1,6 +1,6 @@
 import { UserService } from "../../domain/services/userService"
-import { UserResource } from "../../application/resources/userResource"
-import { BaseController } from "./baseController"
+import { UserResource } from "../resources/userResource"
+import { BaseController } from "../../../../../common/base/baseController"
 
 export class UserController extends BaseController<any> {
     constructor() {

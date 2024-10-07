@@ -1,4 +1,4 @@
-import { BaseService } from "./baseService"
+import { BaseService } from "../../../../../common/base/baseService"
 import { UserModel } from "../models/userModel"
 import { UserEntity } from "../entities/userEntity"
 

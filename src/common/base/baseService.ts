@@ -1,6 +1,6 @@
-import { BaseRepository } from "../../adapter/repositories/baseRepository"
-import { BaseModel } from "../models/baseModel"
-import { BaseEntity } from "../entities/baseEntity"
+import { BaseRepository } from "./baseRepository"
+import { BaseModel } from "./baseModel"
+import { BaseEntity } from "./baseEntity"
 
 export class BaseService<T extends BaseModel, E extends BaseEntity> {
     private repository: BaseRepository<T>

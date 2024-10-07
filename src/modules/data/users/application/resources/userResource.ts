@@ -1,6 +1,6 @@
 
 import { UserModel } from "../../domain/models/userModel"
-import { BaseResource } from "./baseResource"
+import { BaseResource } from "../../../../../common/base/baseResource"
 
 export class UserResource extends BaseResource {
     getOne(user: UserModel) {
